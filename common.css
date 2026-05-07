@@ -62,3 +62,7 @@ html {
 .navbar-link:hover {
     opacity: 0.5;
 }
+
+.page-content{
+    background-image: linear-gradient(90deg, #fff 50%, #242424 50%);
+}
