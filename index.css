@@ -29,3 +29,44 @@
 .intro-text-wrapper p:not(:last-child) {
     margin-bottom: 20px;
 }
+
+.program-title{
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.program-text-wrapper p{ 
+    margin: 0;
+}
+.program-row {
+    display: grid;
+    grid-template-columns: 440px 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+.program-image-wraper{
+    width: 100%;
+    height: 320px;
+    border-radius: 20px; 
+    overflow: hidden;
+}
+.program-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.program-subtitle{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.program-list {
+    margin: 0;
+}
+
+.program-list li {
+    margin-bottom: 10px;
+}
