@@ -68,3 +68,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 260px;
 }
+
+.page-main-column {
+    background-color: #fff;
+}
