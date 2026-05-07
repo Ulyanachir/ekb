@@ -19,6 +19,8 @@ html {
     height: 100%;
 }
 
+
+
 .page-body {
     min-height: 100%;
     margin: 0;
@@ -39,6 +41,7 @@ html {
 .page-header {
     padding: 20px 0;
 }
+
 
 
 .navbar-list {
@@ -63,6 +66,8 @@ html {
     opacity: 0.5;
 }
 
+
+
 .page-content{
     background-image: linear-gradient(90deg, #fff 50%, #242424 50%);
     display: grid;
@@ -72,6 +77,8 @@ html {
 .page-main-column {
     background-color: #fff;
 }
+
+
 
 .sidebar {
     padding: 40px 0 40px 20px ;
@@ -121,4 +128,19 @@ html {
 
 .card-image-title a:hover {
     opacity: 0.5;
+}
+
+
+.page-footer {
+    padding: 30px 0;
+    background-color: #242424;
+    color: #fff;
+}
+
+.page-footer .container {
+    padding-right: 390px ;
+}
+
+.copyright {
+    text-align: center;
 }
