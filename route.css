@@ -1,21 +1,84 @@
-.excursion-route-title {
-    margin: 0;
+.page-section.routes {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+.routes-title {
+    margin-top: 30px;
     margin-bottom: 30px;
     font-size: 40px;
     font-weight: 700;
 }
 
-.rout-card {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 40px;
-    padding: 20px 80px 20px 40px;
-    border-radius: 20px;
+.routes-item {
     background-color: #f8f8f8;
-    max-width: 720px;
-}
-
-.rout-card:not(:last-child) {
+    border-radius: 20px;
+    padding: 25px 35px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.routes-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.routes-item:last-child {
+    margin-bottom: 0;
+}
+
+.routes-item-content {
+    width: 100%;
+}
+
+.routes-item-title {
+    margin: 0 0 15px 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #242424;
+    border-left: 5px solid #242424;
+    padding-left: 20px;
+}
+
+.routes-item-info {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.routes-item-info p {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.routes-item-info p strong {
+    color: #242424;
+    font-weight: 700;
+}
+
+.routes-item-text-wrapper {
+    margin-top: 0;
+}
+
+.routes-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.routes-list li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.routes-list li:last-child {
+    margin-bottom: 0;
+}
+
+.routes-list li strong {
+    font-size: 15px;
+    font-weight: 700;
+    color: #242424;
+}
