@@ -78,6 +78,7 @@ html {
 
 .page-main-column {
     background-color: #fff;
+    max-width: 800px;
 }
 
 
