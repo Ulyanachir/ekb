@@ -78,7 +78,7 @@
 }
 
 .reviews-title {
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 30px;
     font-size: 40px;
     font-weight: 700;
@@ -91,6 +91,7 @@
     padding: 20px 80px 20px 40px;
     border-radius: 20px;
     background-color: #f8f8f8;
+    max-width: 720px;
 }
 
 .reviews-item:not(:last-child) {
