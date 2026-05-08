@@ -1,0 +1,21 @@
+.excursion-route-title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.rout-card {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 40px;
+    padding: 20px 80px 20px 40px;
+    border-radius: 20px;
+    background-color: #f8f8f8;
+    max-width: 720px;
+}
+
+.rout-card:not(:last-child) {
+    margin-bottom: 20px;
+}
+
