@@ -15,6 +15,7 @@
     padding: 25px 35px;
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width:800px;
 }
 
 .routes-item:hover {
