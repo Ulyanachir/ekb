@@ -71,3 +71,52 @@
 .program-list li {
     margin-bottom: 10px;
 }
+
+.auditory {
+    position: relative;
+    background-color: #f2f2f2;
+}
+
+.auditory.content {
+    position: relative;
+    z-index: 1;
+}
+
+.auditory-title{
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.auditory-top {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.auditory-image-wrapper {
+    height: 160px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.auditory-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.auditory-bottom {
+    margin-top: 30px;
+}
+
+.auditory-list {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 20px;
+}
+
