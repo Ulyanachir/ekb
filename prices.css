@@ -52,6 +52,11 @@
     font-size: 14px;
     color: #9d9d9d;
 }
+.services-content {
+    position: relative;
+    z-index: 1;
+}
+
 .service-title{
     margin: 0;
     margin-bottom: 30px;
@@ -74,13 +79,13 @@
     margin-top: 30px;
 }
 
-.services-list {
+.service-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-.service-list label{
+.services-list label{
     font-size: 16px;
 }
 
@@ -98,4 +103,12 @@
     font-size: 20px;
     font-weight: 700;
     white-space: nowrap;
+}
+
+.services-list li {
+    margin-bottom: 15px;
+}
+
+.services-list input[type="checkbox"] {
+    margin-right: 10px;
 }
