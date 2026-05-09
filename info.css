@@ -1,0 +1,50 @@
+
+
+.page-main-column {
+    max-width: 800px;
+}
+
+.page-section {
+    position: relative;
+}
+
+.info-block {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.info-block:last-child {
+    margin-bottom: 0;
+}
+
+.info-block h2 {
+    margin: 0 0 20px 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+
+.info-block h3 {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+.info-block p {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #000;
+}
+
+.info-block p:last-child {
+    margin-bottom: 0;
+}
+
+.info-block strong {
+    font-weight: 700;
+    color: #242424;
+}
