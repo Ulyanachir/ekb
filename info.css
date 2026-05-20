@@ -1,52 +1,394 @@
 
-.page-section {
-    position: relative;
-    padding: 40px 80px 40px 0;
+* {
+  box-sizing: border-box;
+}
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 15px 0;
+  flex-wrap: wrap;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+.page-content {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-main-column {
+  flex: 2;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.program-row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.program-left,
+.program-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.program-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.reviews-item {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 20px;
+}
+
+.reviews-item-image-wrapper {
+  flex-shrink: 0;
+  width: 160px;
+}
+
+.reviews-item-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.reviews-item-content {
+  flex: 1;
+}
+
+.reviews-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list li {
+  margin-bottom: 20px;
+}
+
+.sidebar-list li article {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card-image-link {
+  display: block;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image-title {
+  padding: 12px 15px;
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-image-title a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar-title {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .info-block {
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.info-block:last-child {
-    margin-bottom: 0;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
 }
 
 .info-block h2 {
-    margin: 0 0 20px 0;
-    font-size: 40px;
-    font-weight: 700;
-    color: #000;
+  margin: 0 0 20px 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
 }
 
 .info-block h3 {
-    margin: 0 0 15px 0;
-    font-size: 24px;
-    font-weight: 700;
-    color: #000;
+  margin: 0 0 15px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
 }
 
 .info-block p {
-    margin: 0 0 15px 0;
-    font-size: 20px;
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #000;
+}
+
+.page-footer {
+  text-align: center;
+  padding: 30px 0;
+  background: #f0f0f0;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .navbar-list {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .navbar-link {
+    display: block;
+    padding: 8px 0;
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .page-content {
+    flex-direction: column;
+    gap: 30px;
+    padding: 15px;
+  }
+  
+  .page-main-column,
+  .sidebar {
+    width: 100%;
+  }
+  
+
+  .intro-title {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .intro-text-wrapper p {
+    font-size: 16px;
+  }
+  
+  .program-title {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .program-subtitle {
+    font-size: 22px;
+  }
+  
+  .reviews-title {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .program-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .program-left,
+  .program-right {
+    width: 100%;
+  }
+  
+  .program-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .program-list {
+    padding-left: 20px;
+  }
+  
+  .program-list li {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .reviews-item {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .reviews-item-image-wrapper {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .reviews-item-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .reviews-item-text-wrapper p {
+    font-size: 15px;
     line-height: 1.4;
-    color: #000;
-}
-
-.info-block p:last-child {
-    margin-bottom: 0;
-}
-
-.info-block strong {
-    font-weight: 700;
-    color: #242424;
-}
-
-.info-block p:contains("Банковские карты") {
-    background-color: #fff3cd;
+  }
+  
+  .reviews-item-author {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .sidebar-title {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .card-image-link {
+    height: 180px;
+  }
+  
+  .card-image-title {
+    font-size: 15px;
     padding: 10px;
-    border-radius: 10px;
+  }
+  
+  .page-section {
+    padding: 20px 0 20px 0;
+  }
+  
+  .info-block {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+  }
+  
+  .info-block h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .info-block h3 {
+    font-size: 20px;
+  }
+  
+  .info-block p {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  
+  .page-footer {
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .intro-title {
+    font-size: 24px;
+  }
+  
+  .intro-text-wrapper p {
+    font-size: 14px;
+  }
+  
+  .program-title {
+    font-size: 24px;
+  }
+  
+  .program-subtitle {
+    font-size: 20px;
+  }
+  
+  .reviews-title {
+    font-size: 24px;
+  }
+  
+  .sidebar-title {
+    font-size: 22px;
+  }
+  
+  .navbar-link {
+    font-size: 16px;
+  }
+  
+  .info-block h2 {
+    font-size: 22px;
+  }
+  
+  .info-block p {
+    font-size: 14px;
+  }
+  
+  .card-image-link {
+    height: 150px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .page-content {
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .navbar-list {
+    gap: 20px;
+  }
+  
+  .program-row {
+    gap: 20px;
+  }
+  
+  .reviews-item {
+    gap: 20px;
+  }
+  
+  .info-block h2 {
+    font-size: 32px;
+  }
+  
+  .info-block p {
+    font-size: 18px;
+  }
 }
